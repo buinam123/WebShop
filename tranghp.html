@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Hãng HP </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="trangmacbook.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="animation/animate.min.css">
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body >
+        <div class="vientren"></div>    <!-- viền trên -->
+    <nav class="navbar navbar-default" role="navigation"> 
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/22935.png" alt=""
+                ></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                 
+                 
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="1.html"> Trang Chủ </a></li>
+                    <li class="tincha"><a href="sangtrang.html"> Tin Tức </a>
+                       
+                    </li>
+                    <li><a href="#"> giới thiệu </a></li>
+                    <li><a href="#"> trung tâm bảo hành </a></li>
+                    <li><a href="#"> liên hệ </a></li>
+                    <li>
+                        <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <!--   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                     </form>
+                    </li>
+                    
+                    <div class="icon">
+                        <a href=""><i class="fa fa-search"></i></a> 
+                        <a href=""><i class="fa fa-shopping-cart"></i></a> 
+                    </div>
+                </ul>
+            </div><!-- /.navba<i class="fas fa-phone-alt"></i>r-collapse -->
+        </div>
+    </nav><!--  end menu  -->
+
+    <div class="info">  <!-- tieude -->
+        <div class="container">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                 <h3>Shop LapTop BTN <i class="fa fa-bars"></i></h3>
+             </div> 
+             <div class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
+                <div class="lienlac">
+                   <span> <a href="" class="fa fa-phone dt"></a></span>
+                   <span><h4>Liên Hệ: 0976259940 Fax: 0965233194.</h4></span>
+                </div> 
+                <div class="duoi">
+                    <span><a href="" class="fa fa-home ll"></a></span>
+                    <span>
+                     <h4>Địa chỉ  :</h4>
+                        <ul class="list">
+                            <li>Cơ sở 1: Thanh Xuân - Hà Nội.</li>
+                            <li>Cơ sở 2: Cầu Giấy - Hà Nội.</li>
+                            
+                        </ul>
+                     
+                    </span>
+                </div>  
+                
+             </div>
+             <div class="col-xs4 col-sm-4 col-md-3 col-lg-3">
+                 
+             </div>
+            <div class="nutdangnhap">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Đăng Nhập
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Đăng nhập tài khoản</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form action="#" method="post" accept-charset="utf-8">
+                            <table>
+                                <caption>Đăng Nhập</caption>
+                                <tr class="tren" style="margin:20px;">
+                                    <th>Tài Khoản</th>
+                                    <td class="duoi" style="margin:50px;"><input type="text" name="txttaikhoan" id="txttaikhoan" size="25"></td>
+                                </tr>
+                                <tr class="tren" style="margin:20px;">
+                                    <th>Mật Khẩu</th>
+                                    <td class="duoi"><input type="password" name="txtpass" id="txtpass" size="25"></td>
+                                </tr>
+                                <tr class="tren" style="margin:20px;">
+                                    <td colspan="2" class="duoi">
+                                         <input type="submit" name="login" onclick="formdangnhap()" value="Đăng nhập"/>
+                                         <input type="reset" name="reset" value="Hủy"/>
+                                         
+                                    </td>
+                                   
+                                </tr>
+                            </table>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <!-- <button type="button" class="btn btn-primary">Đăng Ký</button> -->
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                  Đăng Ký
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Đăng ký tài khoản</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body1">
+                        <form action="#" method="post">
+                            <fieldset style="width: 500px; border-color: red;">
+                            <legend style="text-align: center;">Dang ky</legend>
+                            <table>
+                                <tr> 
+                                    <td align="left" class="duoi">Tài Khoản:</td>
+                                    <td><input type="text" name="Tên" size="40" id="txtuser" placeholder="Nhập tên"/>(*)</td>
+                                </tr>
+                                <tr> 
+                                    <td align="left" class="duoi">Mật Khẩu:</td>
+                                    <td><input type="password" name="txtpassword" size="40" id="txtpassword" placeholder="password"/>(*)</td>
+                                </tr>
+                                <tr> 
+                                    <td align="left" class="duoi">Nhập Lại Mật Khẩu:</td>
+                                    <td><input type="password" name="txtpasswordre" size="40" id="txtpasswordre" placeholder="password"/>(*)</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="duoi">Địa Chỉ:</td>
+                                    <td><input type="text" name="Địa Chỉ" id="txtaddress" size="40" placeholder="Nhập địa chỉ"></td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="duoi">Email:</td>
+                                    <td><input type="email" name="Email" size="40" id="txtemail" placeholder="Nhập địa chỉ email">(*)</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="duoi">Giới tính:</td>
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="gender" value="Nam" />Nam
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender" value="Nữ"/>Nữ
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                   <td colspan="2" class="duoi">
+                                         <input type="submit" name="login" onclick="formdangky()" value="Đăng Ký"/>
+                                         <input type="reset" name="reset" value="Hủy"/>
+                                         
+                                    </td> 
+                                </tr>
+
+                            </table>
+                            </fieldset>
+                        </form>     
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+            
+            
+        </div>
+    </div>  <!-- end info -->
+    <section class="container">   <!-- slider -->
+        <div class="row" style="margin-top: 5px;">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <h3 style="text-transform: uppercase;">Danh Sách Sản Phẩm</h3>
+                <div class="listsp">
+                    <ul>
+                        <li><a href="trangmacbook.html">MAC BOOK</a></li>
+                        <li><a href="trangasus.html">ASUS</a></li>
+                        <li><a href="trangdell.html">DELL</a></li>
+                        <li><a href="tranglenovo.html">LENOVO</a></li>
+                        <li><a href="tranghp.html">HP</a></li>
+                        <li><a href="spkhac.html">CÁC SẢN PHẨM KHÁC</a></li>
+                        
+                    </ul>
+                </div>
+                    
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div id="slider">
+                    <figure>
+                        <img src="images/hp/anh1.jpg" height="400px"width="900" class="img-reponsive">
+                        <img src="images/hp/anh2.jpg" height="400px"width="900" class="img-reponsive">
+                        <img src="images/hp/anh3.jpg" height="400px"width="900" class="img-reponsive">
+                        <img src="images/hp/anh4.jpg" height="400px"width="900" class="img-reponsive">
+                        <img src="images/hp/anh5.jpg" height="400px"width="900" class="img-reponsive">
+                        
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!--  viền đen -->
+
+    <div class="duongvien">
+        
+    </div>
+   <!--  end viền đen -->
+
+
+   <!-- phần tiêu đề -->
+   <div class="container-fluid">
+       <div class="row">
+           <div class="tieude"> 
+                <p>Các sản phẩm Hãng HP</p>
+               
+           </div>
+       </div>
+   </div>
+<!-- phần tiêu đề -->
+
+<!-- phần nội dung -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- sản phẩm 1 -->
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow bounceInLeft" data-wow-delay=".3s">
+                <h3><a href="">Laptop HP 15 da0359TU N4417/4GB/500GB/Win10 (6KD00PA) </a>  </h3>
+                <div class="thumnal">
+                    <div class="anhmo">
+                        <p> <a href="trangtt.html">Thông tin sản phẩm</a> </p>
+                       
+                    </div>
+                    <img src="images/hp/anh1.jpg" alt="" class="img-reponsive">
+                    <div class="caption">
+                        <div class="thongtinsp">
+                            RAM 4GB | Ổ CỨNG 1TB
+                        </div>
+                        <span class="giaspmac">
+                           Giá Mới:6.990.000 <sup>đ</sup> 
+                        </span>
+                        <span style="text-decoration:line-through ;">
+                           Giá Cũ:7.990.000 <sup>đ</sup> 
+                        </span>
+                        
+                        <p class="muaban">
+                             <a href="#" class="btn btn-primary rm">MUA</a>
+                            <a href="#" class="btn btn-primary rm">TRẢ GÓP</a>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+             <!--  kết thúc sản phẩm --> 
+
+             <!-- sản phẩm 2 -->
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow bounceInLeft" data-wow-delay=".4s">
+                <h3><a href="">Laptop HP 15 da0048TU N5000/4GB/500GB/Win10/(4ME63PA)</a>  </h3>
+                <div class="thumnal">
+                    <div class="anhmo">
+                        <p> <a href="trangtt.html">Thông tin sản phẩm</a> </p>
+                       
+                    </div>
+                    <img src="images/hp/anh2.jpg" alt="" class="img-reponsive">
+                    <div class="caption">
+                        <div class="thongtinsp">
+                            RAM 4GB | Ổ CỨNG 1TB
+                        </div>
+                        <span class="giaspmac">
+                           Giá Mới:7.990.000 <sup>đ</sup> 
+                        </span>
+                        <span style="text-decoration:line-through ;">
+                           Giá Cũ:8.990.000 <sup>đ</sup> 
+                        </span>
+                        
+                        <p class="muaban">
+                             <a href="#" class="btn btn-primary rm">MUA</a>
+                            <a href="#" class="btn btn-primary rm">TRẢ GÓP</a>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+             <!--  kết thúc sản phẩm --> 
+             <!-- sản phẩm 3 -->
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow bounceInLeft" data-wow-delay=".6s">
+                <h3><a href="">Laptop HP 15 da0055TU i3 7020U/4GB/1TB/Win10/(4NA89PA)</a>  </h3>
+                <div class="thumnal">
+                    <div class="anhmo">
+                        <p> <a href="trangtt.html">Thông tin sản phẩm</a> </p>
+                       
+                    </div>
+                    <img src="images/hp/anh3.jpg" alt="" class="img-reponsive">
+                    <div class="caption">
+                        <div class="thongtinsp">
+                            RAM 4GB | Ổ CỨNG 1TB
+                        </div>
+                        <span class="giaspmac">
+                           Giá Mới:10.990.000 <sup>đ</sup> 
+                        </span>
+                        <span style="text-decoration:line-through ;">
+                           Giá Cũ:11.990.000 <sup>đ</sup> 
+                        </span>
+                        
+                        <p class="muaban">
+                             <a href="#" class="btn btn-primary rm">MUA</a>
+                            <a href="#" class="btn btn-primary rm">TRẢ GÓP</a>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+             <!--  kết thúc sản phẩm --> 
+             <!-- sản phẩm 4 -->
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow bounceInLeft" data-wow-delay=".7s">
+                <h3><a href="">Laptop HP 14 ck0068TU i3 7020U/4GB/500GB/Win10 (4ME90PA)</a>  </h3>
+                <div class="thumnal">
+                    <div class="anhmo">
+                        <p> <a href="trangtt.html">Thông tin sản phẩm</a> </p>
+                       
+                    </div>
+                    <img src="images/hp/anh4.jpg" alt="" class="img-reponsive">
+                    <div class="caption">
+                        <div class="thongtinsp">
+                            RAM 4GB | Ổ CỨNG 1TB
+                        </div>
+                        <span class="giaspmac">
+                           Giá Mới:10.990.000 <sup>đ</sup> 
+                        </span>
+                        <span style="text-decoration:line-through ;">
+                           Giá Cũ:11.990.000 <sup>đ</sup> 
+                        </span>
+                        
+                        <p class="muaban">
+                             <a href="#" class="btn btn-primary rm">MUA</a>
+                            <a href="#" class="btn btn-primary rm">TRẢ GÓP</a>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+             <!--  kết thúc sản phẩm --> 
+             <!-- sản phẩm 5 -->
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow bounceInLeft" data-wow-delay=".9s">
+                <h3><a href="">Laptop HP 15 da0443TX i3 7020U/4GB/1TB MX110/Win10 (5SL06PA)</a>  </h3>
+                <div class="thumnal">
+                    <div class="anhmo">
+                        <p> <a href="trangtt.html">Thông tin sản phẩm</a> </p>
+                       
+                    </div>
+                    <img src="images/hp/anh5.jpg" alt="" class="img-reponsive">
+                    <div class="caption">
+                        <div class="thongtinsp">
+                            RAM 4GB | Ổ CỨNG 1TB
+                        </div>
+                        <span class="giaspmac">
+                           Giá Mới:11.990.000 <sup>đ</sup> 
+                        </span>
+                        <span style="text-decoration:line-through ;">
+                           Giá Cũ:12.990.000 <sup>đ</sup> 
+                        </span>
+                        
+                        <p class="muaban">
+                             <a href="#" class="btn btn-primary rm">MUA</a>
+                            <a href="#" class="btn btn-primary rm">TRẢ GÓP</a>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+             <!--  kết thúc sản phẩm --> 
+             <!-- sản phẩm 6 -->
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 wow bounceInLeft" data-wow-delay="1s">
+                <h3><a href="">Laptop HP Pavilion X360 ad104TU i3 8130U/4GB/500GB/Win10/(4MF13PA)
+</a>  </h3>
+                <div class="thumnal">
+                    <div class="anhmo">
+                        <p> <a href="trangtt.html">Thông tin sản phẩm</a> </p>
+                       
+                    </div>
+                    <img src="images/hp/anh6.jpg" alt="" class="img-reponsive">
+                    <div class="caption">
+                        <div class="thongtinsp">
+                            RAM 4GB | Ổ CỨNG 1TB
+                        </div>
+                        <span class="giaspmac">
+                           Giá Mới:7.990.000 <sup>đ</sup> 
+                        </span>
+                        <span style="text-decoration:line-through ;">
+                           Giá Cũ:8.490.000 <sup>đ</sup> 
+                        </span>
+                        
+                        <p class="muaban">
+                             <a href="#" class="btn btn-primary rm">MUA</a>
+                            <a href="#" class="btn btn-primary rm">TRẢ GÓP</a>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+             <!--  kết thúc sản phẩm -->        
+            
+        </div>
+        
+    </div>
+
+<!-- kết thúc phần nội dung -->
+
+
+<!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 wow zoomInRight" data-wow-delay=".5s">
+                    <p style="text-align: center;">Cpoyright@ 2019 Công Ty TNHH BTL</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <ul style="list-style-type: none; padding-left: 50px;">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <li class="wow bounceInDown" data-wow-delay="0.5s"><a href="">Chính sách bảo hành</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.6s"><a href="">Gửi phản hồi/Ý kiến</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.7s"><a href="">Tìm hiểu về mua trả góp</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.8s"><a href="">Chính sách đổi trả</a></li>
+                            
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <li  class="wow bounceInDown" data-wow-delay="0.55s"><a href="">Hướng dẫn mua hàng</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.66s"><a href="">Chính sách bảo mật</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.75s"><a href="">Giao hàng & Thanh toán</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.85s"><a href="">Tuyển dụng</a></li>
+                            
+                        </div>  
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                    <div class="text-right" style="text-align: center;">
+                        <span class="wow bounceInLeft" data-wow-delay="0.5s">
+                            <a href="" class="fa fa-facebook"></a>
+                        </span  class="wow bounceInRight" data-wow-delay="0.55s">
+                        <span>
+                            <a href="" class="fa fa-twitter"></a>
+                        </span>
+                        <span  class="wow bounceInRight" data-wow-delay="0.60s">
+                            <a href="" class="fa fa-google-plus"></a>
+                        </span>
+                        <span  class="wow bounceInRight" data-wow-delay="0.65s">
+                            <a href="" class="fa fa-google"></a>
+                        </span>
+                        <span  class="wow bounceInRight" data-wow-delay="0.70s">
+                            <a href="" class="fa fa-rss"></a>
+                        </span>
+                        <span  class="wow bounceInRight" data-wow-delay="0.75s">
+                            <a href="" class="fa fa-wifi"></a>
+                        </span>
+  
+                    </div>
+                    <div class="lhrpsive" style="text-align:center;">
+                        <h5>Liên Hệ: 0976259940 Fax: 0965233194. </h5>
+                        <ul style="list-style-type: none;">
+                            <li>Cơ sở 1: Thanh Xuân - Hà Nội.</li>
+                            <li>Cơ sở 2: Cầu Giấy - Hà Nội.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div> <!-- end footer -->
+</body>
+</html>

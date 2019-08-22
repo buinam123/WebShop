@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Mua Hàng Online</title>
+	<link rel="stylesheet" href="muaonline.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="animation/animate.min.css">
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap.css"> -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+	<script language="javascript" type="text/javascript">
+
+		function checkform1()
+		{
+				// lay gia trij cua cac phan tu form roi gan cho cac bien
+				var name = document.forms[0].txtname.value;
+				var namelength = document.forms[0].txtname.value.length;
+				var address = document.forms[0].txtaddress.value;
+				var phone = document.forms[0].txtphone.value;
+				// neeus bien name bawngf roong.....
+				if(name =='')
+				{
+					alert("Ban can nhap ten!");
+					document.forms[0].txtname.focus();
+					return;
+				}
+				if(phone ==''){
+					alert('Nhập số điện thoại vào!!')
+					document.forms[0].txtphone.focus();
+					return;
+				}
+				if(isNaN(phone))
+				{
+					alert('Phải nhập chữ số!!!');
+					document.forms[0].txtphone.focus();
+					return;
+				}
+				if(phone < 9 || phone > 11){
+					alert('Số điện thoại không hợp lệ!');
+					document.forms[0].txtphone.focus();
+					return;
+				}
+				if(namelength < 6 || namelength > 30)
+				{
+					alert('ten cua ban tu 6 den 30 kky tu');
+					document.forms[0].txtname.focus();
+					return;
+				}
+				if(address == '')
+				{
+					alert('ban can nhap dia chi!');
+					document.forms[0].txtaddress.focus();
+					return;
+
+				}
+				
+				if(document.forms[0].rdogender[0].checked == false &&
+				document.forms[0].rdogender[1].checked == false )
+				{
+				alert('ban can chon gioi tinhs');
+				document.forms[0].rdogender[0].focus();
+				return;
+				}
+				document.forms[0].action = 'Result.php';
+				document.forms[0].submit();
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="hearder">
+			<div class="logo">
+				
+			</div>
+			<div class="danhmuc">
+				<ul>
+					 <li><a href="1.html"> Trang Chủ </a></li>
+					 <li><a href="sangtrang.html"> Tin Tức </a></li>
+					 <li><a href="1.html"> Liên Hệ  </a></li>
+					 <li><a href="1.html"> Trung Tâm Bảo Hành </a></li>
+					 
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="margin-left:450px;">
+		<form action="#" method="post" name="form2">
+			<fieldset style="width: 500px; border: 1px solid black; padding:15px;">
+			<table>
+				<caption  class="dangky" style="font-size:30px"><b style="text-align: center;">PHIẾU MUA HÀNG</b><br><br>
+					<p>(online)</p> 
+				</caption>
+				<tr> 
+					<td>Họ và tên:</td>
+					<td> <input type="text" name="txtname" id="txtname" size="40"/>(*)</td>
+				</tr>
+				<tr>
+					<td align="left">Địa Chỉ:</td>
+					<td><input type="text" name="txtaddress" id="txtaddress" size="50" /></td>
+				</tr>
+				<tr>
+					<td>Số ĐT:</td>
+					<td><input type="text" name="txtphone" id="txtphone" size="15" />(*)</td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td>
+						<input type="radio" name="rdogender" value="radio"> Male
+						<input type="radio" name="rdogender" value="radio"> FeMale	
+
+					</td>
+				</tr>
+				<tr>
+					<td>Tên Sản Phẩm:</td>
+					<td><input type="text" size="45" name="tensp" />(*)</td>
+				</tr>
+				<tr>
+					<td>Số Lượng</td>
+					<td><input type="text" size="20" name="solog"/>
+						<select>
+							<option value="Chiếc">Chiếc</option>
+							<option value="KG">Kg</option>
+							<option value="Cái">Cái</option>
+							<option value="Hộp">Hộp</option>
+							<option value="Bộ">Bộ</option>
+							
+						</select>
+					</td>
+					
+				</tr>
+				<tr>
+					<td align="left" valign="top">Ghi Chú:</td>
+					<td>
+						<textarea name="#" cols="40" rows="5" style="overflow-x: hidden;overflow-y: scroll;"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="cuoi" colspan="2" align="center">
+						<div class="vien">
+							<input type="button" name="button" value="Gửi thông tin" id="button" onclick=" checkform1()">
+							<input type="reset" name="button1" value="Nhập lại">
+						</div>
+						
+					</td>
+				</tr>
+			</table>
+			</fieldset>
+		</form>
+	</div>
+	<!-- starts footer -->
+	<div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 wow zoomInRight" data-wow-delay=".5s">
+                    <p style="text-align: center;">Cpoyright@ 2019 Công Ty TNHH BTL</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                    <ul style="list-style-type: none; padding-left: 50px;">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 footer">
+                            <li class="wow bounceInDown" data-wow-delay="0.5s"><a href="">Chính sách bảo hành</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.6s"><a href="">Gửi phản hồi/Ý kiến</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.7s"><a href="">Tìm hiểu về mua trả góp</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.8s"><a href="">Chính sách đổi trả</a></li>
+                            
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 footer">
+                            <li  class="wow bounceInDown" data-wow-delay="0.55s"><a href="">Hướng dẫn mua hàng</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.66s"><a href="">Chính sách bảo mật</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.75s"><a href="">Giao hàng & Thanh toán</a></li>
+                            <li  class="wow bounceInDown" data-wow-delay="0.85s"><a href="">Tuyển dụng</a></li>
+                            
+                        </div>  
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 lh">
+                    <div class="lhrpsive" style="text-align:center;">
+                        <h5>Liên Hệ: 0976259940 Fax: 0965233194. </h5>
+                        <ul style="list-style-type: none;">
+                            <li class="duoi">Cơ sở 1: Thanh Xuân - Hà Nội.</li>
+                            <li class="duoi">Cơ sở 2: Cầu Giấy - Hà Nội.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>   <!-- end foooter
+ -->
+	
+
+</body>
+</html>
