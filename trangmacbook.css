@@ -1,0 +1,567 @@
+*{margin:0;padding:0px; }
+
+
+.cacnutdangnhap {
+    float: right;
+    margin-bottom: 0px;
+}
+.nutdangnhap {
+    margin-top: 25px;
+}
+input[type="submit"] {
+    margin-right: 20px;
+    font-size: 18px;
+    width: 110px;
+}
+input[type="reset"] {
+    font-size: 19px;
+    width: 60px;
+}
+button.btn.btn-primary {
+    margin-left: 15px;
+}
+td.duoi {
+    text-align: center;
+}
+td.duoi {
+    padding: 10px;
+}
+caption {
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: green;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+    margin-left: 125px;
+    margin-bottom: 20px;
+}
+.modal-body1 {
+    position: relative;
+    padding: 15px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+
+.anhmo p {
+    text-align: center;
+    margin-top: 87px;
+}
+
+.anhmo p a {
+    color: white;
+}
+
+.thumnal:hover .anhmo {
+    top: 0px;
+}
+
+.anhmo {
+    position: absolute;
+    background: #00000073;
+    width: 315px;
+    height: 211px;
+    transition: 0.4s;
+    top: -211px;
+}
+
+.thumnal {
+    position: relative;
+    overflow: hidden;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+a.btn.btn-primary.rm {
+    margin-right: 45px;
+}
+
+p.muaban {
+    text-align: center;
+}
+
+span.giaspmac {
+    color: red;
+    font-size: 17px;
+}
+
+.caption {
+    margin-top: 10px;
+}
+
+.thongtinsp {
+    text-align: center;
+}
+
+
+.col-xs-4.col-sm-4.col-md-4.col-lg-4 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    animation: ditutraivao 1s forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+.col-xs4.col-sm-4.col-md-3.col-lg-3 {
+    opacity: 0;
+    animation: ditutrenxuong 1s forwards;
+    animation-delay: 0.9s;
+}
+@keyframes ditutraivao{
+   from{transform:translateX(-300px); opacity:0}
+    to{transform:translateX(0px); opacity:1} 
+}
+@keyframes dituphaivao{
+   from{transform:translateX(300px); opacity:0}
+    to{transform:translateX(0px); opacity:1} 
+} 
+.col-xs-4.col-sm-4.col-md-5.col-lg-5 {
+    opacity: 0;
+    animation: dituphaivao 0.5s forwards;
+    animation-delay: 0.8s;
+}
+
+.navbar-header {
+    opacity: 0;
+    animation: thunho 1s forwards;
+    animation-delay:1s;
+}
+@keyframes ditutrenxuong{
+    from{transform:translateY(-300px); opacity:0}
+    to{transform:translateY(0px); opacity:1}
+}
+@keyframes thunho{
+    from{transform:scale(3); opacity:0}
+    to{transform:scale(1); opacity:1}
+}
+.navbar-default .navbar-nav > li > a{
+    opacity: 0;
+     animation: ditutrenxuong 1s forwards;
+     animation-delay:1.5s;
+}
+.collapse.navbar-collapse.navbar-ex1-collapse{
+    -webkit-animation: ditutrenxuong 0.7s forwards;
+       -moz-animation: ditutrenxuong 0.7s forwards;
+         -o-animation: ditutrenxuong 0.7s forwards;
+            animation: ditutrenxuong 0.7s forwards;
+}
+form.form-inline.my-2.my-lg-0{
+    opacity: 0;
+    -webkit-animation: ditutraisang 1s forwards;
+       -moz-animation: ditutraisang 1s forwards;
+         -o-animation: ditutraisang 1s forwards;
+            animation: ditutraisang 1s forwards;
+         animation-delay:2s;
+}
+@keyframes ditutraisang{
+    from{transform:translateX(300px); opacity:0}
+    to{transform:translateX(0px); opacity:1}
+}
+
+
+
+ul.list {
+    list-style: none;
+    padding-left: 120px;
+    font-size: 18px;
+    padding-top: 6px;
+    margin-bottom: -5px;
+    color: white;
+}
+
+h4 {
+    margin-bottom: 6px;
+}
+
+.duoi h4 {
+    position: relative;
+    margin-left: 22px;
+    float: left;
+}
+
+.duoi h4 ul {
+    list-style: none;
+    /* position: absolute; */
+    float: left;
+}
+
+.duoi {
+    position: relative;
+}
+
+h4 {
+    color: white;
+}
+
+i.fas.fa-phone-alt {
+    position: absolute;
+    display: inline-block;
+    color: white;
+}
+
+
+
+.listsp ul li {
+    list-style-type: none;
+    font-size: 20px;
+    background-color: red;
+    margin-right: 122px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.listsp ul li:hover {
+    background: green;
+}
+
+a {
+    color: #1c1c19;
+    font-size: 17px;
+}
+
+a.fa.fa-home.ll {
+    float: left;
+    font-size: 25px;
+    padding-top: 10px;
+    color: black;
+}
+
+.lienlac a.fa.fa-phone.dt {
+    float: left;
+    padding-right: 25px;
+    color: black;
+    font-size: 25px;
+}
+
+a:hover {
+    color: #04dbf3;
+    text-decoration: none;
+}
+
+.vientren {
+    width: 100%;
+    height: 5px;
+    background: red;
+}
+
+.icon2 .fa {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.4s;
+    margin-right: 10px;
+}
+
+.icon2 .fa:hover {
+    background: green;
+    border-color: green;
+}
+
+.icon2 {
+    text-align: center;
+}
+
+.icon2 {
+    padding-top: 65px;
+}
+
+.link {
+    position: absolute;
+    width: 262.51px;
+    height: 214.07px;
+    background: #00000045;
+    color: white;
+    transition: 0.5s;
+    top: -214px;
+}
+
+a.fa.fa-twitter {
+    color: white;
+}
+
+.text-right {
+    color: white;
+}
+
+a.fa.fa-facebook {
+    color: white;
+    padding: 10px;
+}
+
+
+.footer {
+    margin-top: 80px;
+    border-top:5px solid black;
+    background: gray;
+    padding: 15px;
+    color: white;
+}
+
+.text-right a {
+    color: white;
+    padding: 10px;
+}
+
+.text-right a:hover {
+    color: yellow;
+}
+
+
+.noidung {margin-top: 45px;}
+
+.breadcrumb .active {
+    color: white;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+ol.breadcrumb {
+    background: inherit;
+    float: right;
+    padding-top: 20px;
+}
+
+ol.breadcrumb {
+    padding-top: 34px;
+    font-size: 14px;
+}
+
+.info i.fa.fa-bars {
+    color: black;
+    background: white;
+    padding: 2px;
+    border-radius: 7px;
+    margin-left: 6px;
+}
+
+.info h3 {
+    color: black;
+    font-size: 25px;
+    font-family: lato;
+}
+
+.info {
+    background: gray;
+    padding: 10px;
+}
+
+.navbar-brand > img {
+    transition: 0.4s;
+    width: 100%;
+    max-width: 178px;
+    max-height: 100px;
+}
+
+.navbar-default {
+    background: white;
+    border-bottom: 0px solid transparent;
+}
+
+
+input.form-control.mr-sm-2 {
+    margin-top: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-top: 5px solid transparent;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 15px;
+    transition: 0.6s;
+    color: #05278c;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: red;
+    border-color: yellow;
+}
+
+.icon {
+    float: left;
+    padding-top: 32px;
+    font-size: 22px;
+    padding-left: 12px;
+    color: #a0b1bb;
+}
+ 
+
+ @media (max-width:767px) {
+    *{}
+
+.lienlac h4{ 
+    width: 50%;   
+    height: 50%;
+    font-size: 100%;
+}
+.col-xs-4.col-sm-4.col-md-5.col-lg-5 {
+    display: none;
+}
+
+.duoi h4{
+    font-size: 100%;
+}
+
+.duoi ul li{
+    padding: 0px;
+ overflow: hidden;
+}
+
+.listsp a{
+    font-size: 70%;
+}
+.listsp ul li{
+    width: 80%;
+}
+.navbar-default .navbar-nav > li > a {
+    padding: 15px 0;
+}
+.link{
+    width: 455px;
+    height: 299px;
+}
+
+.icon {
+    display: none;
+}
+
+.navbar-brand > img {
+    width: 40%;
+    margin-top: -17px;
+}
+ }
+ .footer .row p {
+    color: black;
+    padding: 15px;
+    margin-left:-40px;
+}
+
+.footer .footer p {
+    color: white;
+}
+.footer .footer a{
+    color: black;
+}
+
+div#slider{
+    overflow: hidden;
+}
+div#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    -webkit-animation:30s slidy infinite;
+       -moz-animation:30s slidy infinite;
+         -o-animation:30s slidy infinite;
+            animation:30s slidy infinite;
+}
+div#slider figure img{
+    width: 20%;
+    float: left;
+    animation: dituphaivao 0.5s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -300%;
+    }   
+}
+
+body {
+    background: white;
+}
+
+
+.thumbnail a.btn.btn-primary.rm {
+     border-radius: 10px;
+     background: none;
+     border: 1px solid black;
+     text-transform: uppercase;
+     font-family: lato;
+     padding-top: 10px;
+     padding-left: 10px;
+     margin-left: 35px;
+}
+.thumbnail a.btn.btn-primary.rm:hover{
+    background: black;
+    color: white ;
+     -webkit-animation: bounce 0.8s;
+       -moz-animation: bounce 0.8s;
+         -o-animation: bounce 0.8s;
+            animation: bounce 0.8s;
+}
+.thumbnail h3 {
+    padding-top: 22px;
+    padding-bottom: 0px;
+}
+
+.thumbnail .caption {padding: 0px;}
+
+.thumbnail {
+    border: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail:hover .link {
+    top: 0px;
+}
+.col-xs-12.col-sm-6.col-md-3.col-lg-3 img.img-reponsive {
+    width: 93%;
+}
+.duongvien {
+    width: 100%;
+    height: 2px;
+    background: black;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.tieude {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: green;
+}
+.tieude p:hover{
+    color: black;
+}
